@@ -18,7 +18,7 @@ public class CursorAffordance : MonoBehaviour {
 	}
 
     // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
         switch (camRay.layerHit)
         {
