@@ -54,7 +54,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void ProcessMouseMovement()
     {
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButton(1))
         {
             switch (cameraRaycaster.layerHit)
             {
