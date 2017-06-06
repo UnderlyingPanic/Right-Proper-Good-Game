@@ -22,8 +22,7 @@ public class CameraFollow : MonoBehaviour {
     private void Update()
     {
         distanceFromPlayer = Vector3.Distance(player.transform.position, Camera.main.transform.position);
-        print(distanceFromPlayer);
-
+        
         if ((Input.GetAxis("Mouse ScrollWheel") > 0) && (distanceFromPlayer > closestAllowed))
         {
             Camera.main.transform.Translate (zoomVector);

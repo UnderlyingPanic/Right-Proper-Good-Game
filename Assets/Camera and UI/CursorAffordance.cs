@@ -15,10 +15,11 @@ public class CursorAffordance : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         camRay = GetComponent<CameraRaycaster>();
+        camRay.layerChangeObservers += OnLayerChange;
 	}
+    
 
-    // Update is called once per frame
-    void LateUpdate()
+    void OnLayerChange()
     {
         switch (camRay.layerHit)
         {
